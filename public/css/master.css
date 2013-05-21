@@ -3,6 +3,28 @@ body {
   color: white;
 }
 
-#logo {
+.brand {
+  background: transparent url(/images/logo.png) no-repeat left center;
+  padding-left: 40px !important;
+}
+
+div[role=main].container {
+  margin-top: 50px;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
   display: inline-block;
+}
+
+h1 {
+  border-bottom: 1px solid white;
+}
+
+.infobox, .tright {
+  float: right;
+  border: 1px solid white;
+  margin: 5px;
 }

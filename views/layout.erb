@@ -2,11 +2,21 @@
 <html>
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css" media="screen" title="" charset="utf-8">
+    <link rel="stylesheet" href="/css/bootstrap-responsive.min.css" type="text/css" media="screen" title="" charset="utf-8">
     <link rel="stylesheet" href="/css/master.css" type="text/css" media="screen" title="" charset="utf-8">
     <title>Hitch Hiker's Guide</title>
   </head>
 </html>
 <body id="">
-  <img src='/images/logo.png' id='logo'/>
-  <%= yield %>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="brand" href="/">Hitchhiker's Guide to the Galaxy</a>
+          </div>
+        </div>
+      </div>
+  <div role="main" class='container'>
+    <%= yield %>
+  </div>
 </body>
