@@ -14,6 +14,7 @@ class HitchWikiApp < Sinatra::Base
     end
     
     doc.css(".mw-editsection").each(&:remove)
+    doc.css("#jump-to-nav").each(&:remove)
     
     @html = doc.children.to_html
     erb :index
