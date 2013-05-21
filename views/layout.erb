@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css" media="screen" title="" charset="utf-8">
     <link rel="stylesheet" href="/css/bootstrap-responsive.min.css" type="text/css" media="screen" title="" charset="utf-8">
     <link rel="stylesheet" href="/css/master.css" type="text/css" media="screen" title="" charset="utf-8">
-    <title>Hitch Hiker's Guide</title>
+    <title>Hitchhiker's Guide to the Galaxy <%= " on #{params[:splat][0].gsub("_", " ")}" if params[:splat] && params[:splat][0] != "" %></title>
   </head>
 </html>
 <body id="">
@@ -13,6 +13,17 @@
         <div class="navbar-inner">
           <div class="container">
             <a class="brand" href="/">Hitchhiker's Guide to the Galaxy</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav pull-right">
+                <li>
+                  <form action="/guide-search" class="navbar-search pull-left">
+                    <input type="text" name="q" class="search-query" placeholder="Search">
+                  </form>
+                </li>
+                <li><a href="https://donate.wikimedia.org">Donate to Megadodo Publications</a></li>
+                <li><a href="http://www.amazon.com/Hitchhikers-Guide-Galaxy-Douglas-Adams/dp/0345391802">Buy the Novel</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
