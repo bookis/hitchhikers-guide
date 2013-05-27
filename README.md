@@ -1,7 +1,7 @@
 # How to setup this app
 
-1. You will need to install Ruby, a good (but occasionally troublesome) solution for installing ruby is [RVM](https://rvm.io). 
-2. We are using [Bundler](http://gembundler.com) to manage gems. Install Bundler
+1. You will need to install Ruby, a good (but occasionally troublesome) solution for installing ruby is [RVM](https://rvm.io) (if Ruby is already installed, don't worry about it for now).
+2. We are using [Bundler](http://gembundler.com) to manage gems. Install Bundler by running `gem install bundler`
 3. From the root directory of this project in the Terminal, run `bundle`. This will install all the needed gems.
 4. After gems finish installing, run `rackup`, this will start the WEBrick server running the Sinatra app.
 5. In your browser go to [http://localhost:9292](http://localhost:9292).
