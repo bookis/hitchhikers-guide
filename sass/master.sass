@@ -1,0 +1,209 @@
+//
+//
+// Variables
+//
+$c-bg: #1A1A1A
+$c-body: #eeeeee
+$c-module: #111111
+$c-border: #151515
+
+$c-link: #A2C8F2
+$c-visited: #66B3F2
+
+$c-green: #1F4C36
+$c-green-bg: #11291D
+
+$c-blue: #0088BB
+$c-blue-bg: #1F2F40
+
+$c-purple: #563B7D
+$c-purple-bg: #1E142B
+//original purple #ddcef2
+
+// lime green: #D1E80C
+//
+
+body
+  background-color: $c-bg
+  color: $c-body
+  font-size: 18px
+  font-weight: normal
+  line-height: 24px
+
+strong, b
+  color: white
+
+.brand 
+  background: transparent url(/images/logo.png) no-repeat left center
+  padding-left: 40px !important
+
+div[role=main].container 
+  margin-top: 50px
+  margin-bottom: 2em
+
+
+h1, h2 
+  border-bottom: 1px solid $c-body
+  font-weight: normal
+
+ul 
+  li 
+    margin-bottom: 0.25em
+    line-height: 24px
+
+ol.references
+  margin-left: 3em
+  li 
+    margin-bottom: 0.25em
+
+//
+// Links
+//
+
+a 
+  &:link
+    color: $c-link
+  &:visited
+    color: $c-visited
+  &:hover
+    color: $c-visited
+  &:active
+    color: $c-visited
+
+//end
+
+//
+// Tables... WIKIPEDIA USES TABLES?!
+//
+// table#mp-topbanner            Main Page: Welcome to Wikipedia
+// table#mp-upper             Main Page: Today’s Featured Article
+// table#mp-lower             Main Page: Today’s Featured Picture
+// table#mp-left              Main Page: (within mp-upper) green
+// table#mp-right             Main Page: blue
+// table#mp-bottom            Main Page: purple
+//
+table#mp-topbanner
+  margin-bottom: 10px !important
+
+table#mp-topbanner, table#mp-upper, table#mp-lower
+  border: 0 !important
+  tr
+    td, td.MainPageBG
+      background-color: $c-module !important
+      color: $c-body
+      div 
+        color: $c-body !important
+    td.MainPageBG
+      border: 0 !important
+
+table#mp-upper, table#mp-lower
+  td.MainPageBG
+    table#mp-left, table#mp-right, table#mp-bottom
+      tr td 
+        padding: 0 !important
+      h2 
+        &#mp-tfa-h2, &#mp-dyk-h2, &#mp-itn-h2, &#mp-otd-h2, &#mp-tfp-h2
+          margin: 0 !important
+          color: $c-body !important
+      div 
+        &#mp-tfa, &#mp-dyk, &#mp-itn, &#mp-otd, &#mp-tfp
+          padding: 20px !important
+
+  table#mp-left
+    background-color: $c-green-bg !important 
+    tr td
+      background-color: $c-green-bg !important 
+    h2
+      &#mp-tfa-h2, &#mp-dyk-h2
+        background-color: $c-green !important
+        border: 0 !important
+
+  table#mp-right
+    background-color: $c-blue-bg !important
+    tr td 
+      background-color: $c-blue-bg !important
+    h2
+      &#mp-itn-h2, &#mp-otd-h2
+        background-color: $c-blue !important
+        border: 0 !important
+
+  table#mp-bottom
+    background-color: $c-purple-bg !important
+  tr td 
+    background-color: $c-purple-bg !important 
+  h2
+    &#mp-tfp-h2
+      background-color: $c-purple !important
+      border: 0 !important
+//end 
+
+//
+// Individual Pages
+//
+// .infobox             Right-hand 'summary'
+// #toc                 Contents box
+// table.infobox        Right-hand 'summary' is also a TABLE
+// .dablink             "If you meant the other definition of this word, click here"
+
+.infobox, .tright
+  float: right
+  margin: 0.5em 0 0.5em 1em
+
+.infobox, .tright, #toc
+  border: 0.5em solid $c-border
+  background-color: $c-module
+
+table.infobox, table#toc 
+  tr td 
+    padding: 0.25em 0.75em
+
+#toc 
+  ul
+    margin-left: 0.5em
+    li
+      &.toclevel-1, &.tocsection-1
+        list-style-type: none
+        ul 
+          margin-left: 1.5em
+          li 
+            list-style-type: none
+
+.dablink 
+  margin-top: 0.5em
+  margin-bottom: 0.5em
+  font-style: italic
+
+table.wikitable 
+  tbody 
+    tr th
+      background-color: $c-purple
+//end
+
+
+// 
+// Footer
+//
+div.printfooter
+  margin: 0.5em 0 0.5em
+  padding: 0.5em
+  background-color: $c-module
+  border: 0.5em solid $c-border
+  
+div#catlinks
+  #mw-normal-catlinks, #mw-hidden-catlinks
+    float: left
+    display: inline-block
+    margin-top: 0.5em
+    margin-bottom: 1em
+    padding-top: 0.5em
+    padding-bottom: 0.5em
+    background-color: $c-module
+    border: 0.5em solid $c-border
+    ul 
+      li 
+        display: inline
+        list-style-type: none
+        padding-right: 0.25em
+        &:after 
+          content: "  |"
+//end
