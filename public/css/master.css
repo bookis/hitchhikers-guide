@@ -1,30 +1,131 @@
 body {
-  background-color: black;
-  color: white;
-}
+  background-color: #1a1a1a;
+  color: #eeeeee;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 24px; }
+
+strong, b {
+  color: white; }
 
 .brand {
   background: transparent url(/images/logo.png) no-repeat left center;
-  padding-left: 40px !important;
-}
+  padding-left: 40px !important; }
 
 div[role=main].container {
   margin-top: 50px;
-}
+  margin-bottom: 2em; }
 
-ul {
-  list-style: none;
-}
+h1, h2 {
+  border-bottom: 1px solid #eeeeee;
+  font-weight: normal; }
+
 ul li {
-  display: inline-block;
-}
+  margin-bottom: 0.25em;
+  line-height: 24px; }
 
-h1 {
-  border-bottom: 1px solid white;
-}
+ol.references {
+  margin-left: 3em; }
+  ol.references li {
+    margin-bottom: 0.25em; }
+
+a:link {
+  color: #a2c8f2; }
+a:visited {
+  color: #66b3f2; }
+a:hover {
+  color: #66b3f2; }
+a:active {
+  color: #66b3f2; }
+
+table#mp-topbanner {
+  margin-bottom: 10px !important; }
+
+table#mp-topbanner, table#mp-upper, table#mp-lower {
+  border: 0 !important; }
+  table#mp-topbanner tr td, table#mp-topbanner tr td.MainPageBG, table#mp-upper tr td, table#mp-upper tr td.MainPageBG, table#mp-lower tr td, table#mp-lower tr td.MainPageBG {
+    background-color: #111111 !important;
+    color: #eeeeee; }
+    table#mp-topbanner tr td div, table#mp-topbanner tr td.MainPageBG div, table#mp-upper tr td div, table#mp-upper tr td.MainPageBG div, table#mp-lower tr td div, table#mp-lower tr td.MainPageBG div {
+      color: #eeeeee !important; }
+  table#mp-topbanner tr td.MainPageBG, table#mp-upper tr td.MainPageBG, table#mp-lower tr td.MainPageBG {
+    border: 0 !important; }
+
+table#mp-upper td.MainPageBG table#mp-left tr td, table#mp-upper td.MainPageBG table#mp-right tr td, table#mp-upper td.MainPageBG table#mp-bottom tr td, table#mp-lower td.MainPageBG table#mp-left tr td, table#mp-lower td.MainPageBG table#mp-right tr td, table#mp-lower td.MainPageBG table#mp-bottom tr td {
+  padding: 0 !important; }
+table#mp-upper td.MainPageBG table#mp-left h2#mp-tfa-h2, table#mp-upper td.MainPageBG table#mp-left h2#mp-dyk-h2, table#mp-upper td.MainPageBG table#mp-left h2#mp-itn-h2, table#mp-upper td.MainPageBG table#mp-left h2#mp-otd-h2, table#mp-upper td.MainPageBG table#mp-left h2#mp-tfp-h2, table#mp-upper td.MainPageBG table#mp-right h2#mp-tfa-h2, table#mp-upper td.MainPageBG table#mp-right h2#mp-dyk-h2, table#mp-upper td.MainPageBG table#mp-right h2#mp-itn-h2, table#mp-upper td.MainPageBG table#mp-right h2#mp-otd-h2, table#mp-upper td.MainPageBG table#mp-right h2#mp-tfp-h2, table#mp-upper td.MainPageBG table#mp-bottom h2#mp-tfa-h2, table#mp-upper td.MainPageBG table#mp-bottom h2#mp-dyk-h2, table#mp-upper td.MainPageBG table#mp-bottom h2#mp-itn-h2, table#mp-upper td.MainPageBG table#mp-bottom h2#mp-otd-h2, table#mp-upper td.MainPageBG table#mp-bottom h2#mp-tfp-h2, table#mp-lower td.MainPageBG table#mp-left h2#mp-tfa-h2, table#mp-lower td.MainPageBG table#mp-left h2#mp-dyk-h2, table#mp-lower td.MainPageBG table#mp-left h2#mp-itn-h2, table#mp-lower td.MainPageBG table#mp-left h2#mp-otd-h2, table#mp-lower td.MainPageBG table#mp-left h2#mp-tfp-h2, table#mp-lower td.MainPageBG table#mp-right h2#mp-tfa-h2, table#mp-lower td.MainPageBG table#mp-right h2#mp-dyk-h2, table#mp-lower td.MainPageBG table#mp-right h2#mp-itn-h2, table#mp-lower td.MainPageBG table#mp-right h2#mp-otd-h2, table#mp-lower td.MainPageBG table#mp-right h2#mp-tfp-h2, table#mp-lower td.MainPageBG table#mp-bottom h2#mp-tfa-h2, table#mp-lower td.MainPageBG table#mp-bottom h2#mp-dyk-h2, table#mp-lower td.MainPageBG table#mp-bottom h2#mp-itn-h2, table#mp-lower td.MainPageBG table#mp-bottom h2#mp-otd-h2, table#mp-lower td.MainPageBG table#mp-bottom h2#mp-tfp-h2 {
+  margin: 0 !important;
+  color: #eeeeee !important; }
+table#mp-upper td.MainPageBG table#mp-left div#mp-tfa, table#mp-upper td.MainPageBG table#mp-left div#mp-dyk, table#mp-upper td.MainPageBG table#mp-left div#mp-itn, table#mp-upper td.MainPageBG table#mp-left div#mp-otd, table#mp-upper td.MainPageBG table#mp-left div#mp-tfp, table#mp-upper td.MainPageBG table#mp-right div#mp-tfa, table#mp-upper td.MainPageBG table#mp-right div#mp-dyk, table#mp-upper td.MainPageBG table#mp-right div#mp-itn, table#mp-upper td.MainPageBG table#mp-right div#mp-otd, table#mp-upper td.MainPageBG table#mp-right div#mp-tfp, table#mp-upper td.MainPageBG table#mp-bottom div#mp-tfa, table#mp-upper td.MainPageBG table#mp-bottom div#mp-dyk, table#mp-upper td.MainPageBG table#mp-bottom div#mp-itn, table#mp-upper td.MainPageBG table#mp-bottom div#mp-otd, table#mp-upper td.MainPageBG table#mp-bottom div#mp-tfp, table#mp-lower td.MainPageBG table#mp-left div#mp-tfa, table#mp-lower td.MainPageBG table#mp-left div#mp-dyk, table#mp-lower td.MainPageBG table#mp-left div#mp-itn, table#mp-lower td.MainPageBG table#mp-left div#mp-otd, table#mp-lower td.MainPageBG table#mp-left div#mp-tfp, table#mp-lower td.MainPageBG table#mp-right div#mp-tfa, table#mp-lower td.MainPageBG table#mp-right div#mp-dyk, table#mp-lower td.MainPageBG table#mp-right div#mp-itn, table#mp-lower td.MainPageBG table#mp-right div#mp-otd, table#mp-lower td.MainPageBG table#mp-right div#mp-tfp, table#mp-lower td.MainPageBG table#mp-bottom div#mp-tfa, table#mp-lower td.MainPageBG table#mp-bottom div#mp-dyk, table#mp-lower td.MainPageBG table#mp-bottom div#mp-itn, table#mp-lower td.MainPageBG table#mp-bottom div#mp-otd, table#mp-lower td.MainPageBG table#mp-bottom div#mp-tfp {
+  padding: 20px !important; }
+table#mp-upper table#mp-left, table#mp-lower table#mp-left {
+  background-color: #11291d !important; }
+  table#mp-upper table#mp-left tr td, table#mp-lower table#mp-left tr td {
+    background-color: #11291d !important; }
+  table#mp-upper table#mp-left h2#mp-tfa-h2, table#mp-upper table#mp-left h2#mp-dyk-h2, table#mp-lower table#mp-left h2#mp-tfa-h2, table#mp-lower table#mp-left h2#mp-dyk-h2 {
+    background-color: #1f4c36 !important;
+    border: 0 !important; }
+table#mp-upper table#mp-right, table#mp-lower table#mp-right {
+  background-color: #1f2f40 !important; }
+  table#mp-upper table#mp-right tr td, table#mp-lower table#mp-right tr td {
+    background-color: #1f2f40 !important; }
+  table#mp-upper table#mp-right h2#mp-itn-h2, table#mp-upper table#mp-right h2#mp-otd-h2, table#mp-lower table#mp-right h2#mp-itn-h2, table#mp-lower table#mp-right h2#mp-otd-h2 {
+    background-color: #0088bb !important;
+    border: 0 !important; }
+table#mp-upper table#mp-bottom, table#mp-lower table#mp-bottom {
+  background-color: #1e142b !important; }
+table#mp-upper tr td, table#mp-lower tr td {
+  background-color: #1e142b !important; }
+table#mp-upper h2#mp-tfp-h2, table#mp-lower h2#mp-tfp-h2 {
+  background-color: #563b7d !important;
+  border: 0 !important; }
 
 .infobox, .tright {
   float: right;
-  border: 1px solid white;
-  margin: 5px;
-}
+  margin: 0.5em 0 0.5em 1em; }
+
+.infobox, .tright, #toc {
+  border: 0.5em solid #151515;
+  background-color: #111111; }
+
+table.infobox tr td, table#toc tr td {
+  padding: 0.25em 0.75em; }
+
+#toc ul {
+  margin-left: 0.5em; }
+  #toc ul li.toclevel-1, #toc ul li.tocsection-1 {
+    list-style-type: none; }
+    #toc ul li.toclevel-1 ul, #toc ul li.tocsection-1 ul {
+      margin-left: 1.5em; }
+      #toc ul li.toclevel-1 ul li, #toc ul li.tocsection-1 ul li {
+        list-style-type: none; }
+
+.dablink {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-style: italic; }
+
+table.wikitable tbody tr th {
+  background-color: #563b7d; }
+
+div.printfooter {
+  margin: 0.5em 0 0.5em;
+  padding: 0.5em;
+  background-color: #111111;
+  border: 0.5em solid #151515; }
+
+div#catlinks #mw-normal-catlinks, div#catlinks #mw-hidden-catlinks {
+  float: left;
+  display: inline-block;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: #111111;
+  border: 0.5em solid #151515; }
+  div#catlinks #mw-normal-catlinks ul li, div#catlinks #mw-hidden-catlinks ul li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 0.25em; }
+    div#catlinks #mw-normal-catlinks ul li:after, div#catlinks #mw-hidden-catlinks ul li:after {
+      content: "  |"; }
